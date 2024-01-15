@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveleando</title>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-image: url(../imagenes/fondo5.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 100px;
+        }
+        h1{
+            color: rgb(153, 153, 153);
+
+        }
+        
+        #contenedor{
+            margin: auto;
+
+        }
+        #menu{
+            width: auto;
+            height: 10%;
+            padding: 20px;
+            margin: auto;
+        }
+        #login h1{
+            text-align: center;
+        }
+        #button{
+            padding: 0;
+        }
+        #button li{
+            display: inline;
+        }
+        #button li a{
+            text-decoration: solid;
+            color: rgb(153, 153, 153);
+            font-size: 20px;
+            padding: 30px;            
+            
+        }
+        #button li a:hover{
+            background-color: rgba(44, 128, 167, 0.808);
+            
+        }
+
+        form{
+            text-align: center;
+            width: 300px;
+            border-radius: 10px;
+            padding: 20px;
+            margin: auto;
+            background-color: rgba(44, 128, 167, 0.808);
+        }
+        form label{
+            width: 80px;
+            font-weight: bold;
+            display: inline;
+        }
+        form input[type="text"]{
+            width: 200px;
+            padding: 3px 10px;
+            border: 2px solid rgba(5, 5, 5, 0.808);
+            border-radius: 25px;
+            background-color: antiquewhite;
+        }
+        form input[type="password"]{
+            width: 150px;
+            padding: 3px 10px;
+            border: 2px solid rgba(5, 5, 5, 0.808);
+            border-radius: 25px;
+            background-color: antiquewhite;
+        }
+        form input[type="submit"]{
+            padding: 13px 25px;
+            color: #ffffff;
+            border-radius: 25px;
+            background-color: rgba(11, 23, 29, 0.603);
+            text-transform: capitalize;
+        }
+        form input[type="submit"]:hover{
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Traveleando</h1>
+    <div id="contenedor">
+
+        <div id="menu">
+            <center>
+                <ul id="button">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../Paginas/sobre_nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="../Paginas/productos.html">Productos</a></li>
+                    <li><a href="../Paginas/contactos.html">Contactos</a></li>
+                    <li><a href="Paginas/formulario.html">Login</a></li>
+                </ul>
+            </center>
+
+        </div>
+        <br><br>
+
+        <div id="login">
+            <h1>Iniciar sesion</h1>
+ 
+            <form>
+                <label>Email: </label>
+                <input type="text" name="Email" placeholder="Ingrese su Email">
+                <br><br>
+                <label>Contraseña: </label>
+                <input type="password" name="password" placeholder="Ingrese su contraeña">
+                <br><br>
+                <input type="submit" value="Enviar">
+                <br>
+                <a href="#">¿Olvido su contraseña?</a>
+                <br><br>
+            </form>
+
+        </div>
+        <br><br>
+
+        <div id="pie">
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>

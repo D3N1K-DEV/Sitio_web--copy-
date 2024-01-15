@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveleando</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            
+        } 
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-image: url(../imagenes/fondo3.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 100px;
+            padding: 0;
+            background-color: aliceblue;
+            
+        }
+      
+        #contenedor{
+            margin: auto;
+
+        }
+        #encabezado{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            width: 900px;
+            height: 100px;
+            padding: 20px;
+            margin: auto;
+        }
+        #menu{
+            width: 900px;
+            height: 100px;
+            padding: 20px;
+            margin: auto;
+        }
+        #contenido{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+         
+
+        .collage-item{
+            flex: 1 0 30%; /*ajustar el tamaño de las imagenes */
+        }
+       
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+       
+        .footer{
+            background-color: #1d293f;
+        }
+
+        .footer_title{
+            font-weight: 300;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            margin-inline-start: auto;
+            padding: 30px;
+        }
+
+        .footer_title, .footer_newsletter{
+            margin: 10px;
+            color: #fff;
+        }
+
+        .footer_container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #fff;
+            padding-bottom: 60px;
+        }
+
+        .footer_inputs{
+            margin-top: 10px;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .footer_input{
+            background-color: #fff;
+            height: 50px;
+            display: block;
+            padding-left: 10px;
+            border-radius: 6px;
+            font-size: 1rem;
+            outline: none;
+            border: none;
+            margin: 20px;
+        }
+
+        .footer_submit{
+            margin: 20px;
+            display: inline-block;
+            height: 50px;
+            padding: 20px;
+            background-color: #2091f9;
+            border: none;
+            font-size: 1rem;
+            color: #fff;
+            border-radius: 6px; 
+            cursor: pointer;
+        }
+
+        .footer_copy{
+            --padding-container: 30px 0;
+            text-align: center;
+            color: #fff;
+            margin: 10px;
+        }
+
+        .footer_copyrigth{
+            font-weight: 300;
+            margin: 10px;
+        }
+
+        .footer_icons{
+            display: inline-flex;
+            margin-bottom: 10px;
+            
+        }
+
+        .footer_img{
+            width: 30px;
+        }
+
+        #button{
+            padding: 0;
+        }
+        #button li{
+            display: inline;
+        }
+        #button li a{
+            text-decoration: solid;
+            color: black;
+            font-size: 20px;
+            padding: 30px;            
+            
+        }
+        #button li a:hover{
+            background-color: rgba(44, 128, 167, 0.808);
+        }
+
+
+@media screen and (max-width: 767px) {
+  img {
+  max-width: 100%;
+  height: auto;
+
+  body {
+  font-size: 16px;
+}
+
+.contenedor {
+  width: 90%;
+  margin: 0 auto;
+}
+}
+}
+    </style>
+</head>
+<body>
+    <h1>Traveleando</h1>
+    <div id="contenedor">
+        <br><br>
+
+        <div id="menu">
+            <center>
+                <ul id="button">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../Paginas/sobre_nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="../Paginas/productos.html">Productos</a></li>
+                    <li><a href="../Paginas/contactos.html">Contactenos</a></li>
+                    <li><a href="../Paginas/formulario.html">Login</a></li>
+                </ul>
+            </center>
+        </div>
+        <br><br>
+        <div id="encabezado">
+            <h1>Mi galeria.</h1>
+
+        </div>
+        
+        <br><br>
+
+        <div id="contenido">
+            
+                <div class="collage-item"><img src="../imagenes/viaje1.jpeg" alt="Imagen 1"></div>
+                <div class="collage-item"><img src="../imagenes/viaje2.jpeg" alt="Imagen 2"></div>
+                <div class="collage-item"><img src="../imagenes/viaje3.jpg" alt="Imagen 3"></div>
+                <div class="collage-item"><img src="../imagenes/viaje4.jpeg" alt="Imagen 4"></div>
+                <div class="collage-item"><img src="../imagenes/viaje5.jpeg" alt="Imagen 5"></div>
+                <div class="collage-item"><img src="../imagenes/viaje6.jpg" alt="Imagen 6"></div>
+            
+         
+        </div>
+        <br><br>
+
+        <div id="pie">
+            <footer class="footer">
+                <section class="footer_container container">
+                    <nav class="nav nav--footer">
+                        <h2 class="footer_title">Traveleando.</h2>
+                    </nav>
+        
+                    <form class="footer_form" action="#"
+                    method="POST">
+                        <h2 class="footer_newsletter">Trabaja con nosotros.</h2>
+                        <div class="footer_inputs">
+                            <input type="email" placeholder="Email:" class="footer_input" name="email">
+                            <input type="submit" value="Solicita mas informacion." class="footer_submit">
+                        </div>
+                    </form>
+                </section>
+        
+                <section class="footer_copy container">
+                    <div class="footer_social">
+                        <a href="https://m.facebook.com/" class="footer_icons" target="_blank">
+                            <img src="../imagenes/fbicon.svg" alt="facebook icon" class="footer_img"> 
+                        </a>
+                        <a href="https://www.instagram.com/" class="footer_icons" target="_blank">
+                            <img src="../imagenes/instagramicon.svg" alt="instagram icon" class="footer_img">
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=35699149246&text=Hola!%20Necesito%20mas%20informaciòn." class="footer_icons" target="_blank">
+                            <img src="../imagenes/whatsaapicon.svg" alt="whatsapp icon" class="footer_img"> 
+                        </a>
+                    </div>
+                    <h3 class="footer_copyright">Derechos reservados &copy; Traveleando2023</h3>
+                </section>
+            </footer>
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>
